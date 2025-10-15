@@ -8,26 +8,35 @@ while True:
     print("4. Exit")
     
     option = input("Enter option: ")
-
-    # -------------------------------
+    
+ 
     # Group 1: Check Balance
     if option == "1":
-        pass   # <-- Group 1: Insert your code here
+        
+      print(f"your current balance is {balance}")
 
-    # -------------------------------
     # Group 2: Buy Data
     elif option == "2":
         
-        pass   # <-- Group 2: Insert your code here
-
-    # -------------------------------
-    # Group 3: Buy Airtime
+        amount = int(input("enter amount:"))
+        if amount <= balance:
+          balance -= amount
+          print(f"you have successfully redeemed a data package of {amount} birr") 
+          print(f"your remaining balance is {balance} birr")
+        else:
+            print("your balance is insufficient")
     elif option == "3":
-        pass   # <-- Group 3: Insert your code here
-
-    # -------------------------------
-    # Group 4: Exit & Invalid Input
+      
+        amount = int(input("enter amount:"))
+        if amount <= balance:
+          balance -= amount
+          print(f"you have successfully redeemed an airtime of {amount} birr")
+          print(f"your remaining balance is {balance} birr")
+         else:
+             print("your balance is insufficient")
+   
     elif option == "4":
-        pass   # <-- Group 4: Insert your code to handle exit here
+        print("thank you for using our service")
+        break
     else:
-        pass   # <-- Group 4: Insert your code to handle invalid input here
+        print("invalid input!")
