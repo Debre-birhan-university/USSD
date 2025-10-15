@@ -19,16 +19,24 @@ while True:
     elif option == "2":
         
         amount = int(input("enter amount:"))
-        print(f"you have successfully redeemed a data package of {amount} birr")
-
-    # Group 3: Buy Airtime
+        if amount <= balance:
+          balance -= amount
+          print(f"you have successfully redeemed a data package of {amount} birr") 
+          print(f"your remaining balance is {balance} birr")
+        else:
+            print("your balance is insufficient")
     elif option == "3":
       
         amount = int(input("enter amount:"))
-        print(f"you have successfully redeemed an airtime of {amount} birr")
-        
-    # Group 4: Exit & Invalid Input
+        if amount <= balance:
+          balance -= amount
+          print(f"you have successfully redeemed an airtime of {amount} birr")
+          print(f"your remaining balance is {balance} birr")
+         else:
+             print("your balance is insufficient")
+   
     elif option == "4":
         print("thank you for using our service")
+        break
     else:
         print("invalid input!")
