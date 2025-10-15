@@ -12,6 +12,7 @@ while True:
     # -------------------------------
     # Group 1: Check Balance
     if option == "1":
+        
         pass   # <-- Group 1: Insert your code here
 
     # -------------------------------
