@@ -12,7 +12,8 @@ while True:
     # -------------------------------
     # Group 1: Check Balance
     if option == "1":
-        pass   # <-- Group 1: Insert your code here
+        if option == "1":
+            print(f"balance= {balance} birr")   # <-- Group 1: Insert your code here
 
     # -------------------------------
     # Group 2: Buy Data
