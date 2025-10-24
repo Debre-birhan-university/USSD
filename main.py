@@ -10,7 +10,6 @@ while True:
     option = input("Enter option: ")
     
  
-    # Group 1: Check Balance
     if option == "1":
         
       print(f"your current balance is {balance}")
